@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutreteconlu | Dietas personalizadas con Lucía</title>
+<meta name="description" content="Planes de alimentación personalizados con Lucía, nutricionista colegiada (CV02333) en Valencia. Reserva tu valoración inicial.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <p class="eyebrow">Lucía · Nutricionista colegiada CV02333 · Valencia</p>
+    <h1>Tu dieta, hecha para ti — no una plantilla genérica</h1>
+    <p class="lead">Planes de alimentación personalizados, sin prohibiciones ni dietas milagro. Hábitos que se adaptan a tu vida real.</p>
+    <a href="#reserva" class="btn">Reserva tu cita</a>
+  </div>
+</header>
+
+<section class="problema">
+  <div class="container narrow">
+    <h2>Las dietas genéricas no funcionan</h2>
+    <p>Lo que de verdad cambia las cosas son hábitos pensados para ti: tu rutina, tus gustos, tu día a día. Eso es lo que construimos juntas.</p>
+  </div>
+</section>
+
+<section class="incluye">
+  <div class="container">
+    <h2>Qué incluye tu dieta personalizada</h2>
+    <ul class="grid">
+      <li>
+        <h3>Valoración inicial completa</h3>
+        <p>Hablamos de tus hábitos, objetivos y rutina antes de diseñar nada.</p>
+      </li>
+      <li>
+        <h3>Plan 100% adaptado a ti</h3>
+        <p>Nada de plantillas genéricas: tu plan se hace a tu medida.</p>
+      </li>
+      <li>
+        <h3>Seguimiento mensual</h3>
+        <p>Ajustamos el plan según cómo te vaya, no se queda parado.</p>
+      </li>
+      <li>
+        <h3>Acompañamiento real</h3>
+        <p>Resolvemos dudas por el camino, no estás sola en esto.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="proceso">
+  <div class="container narrow">
+    <h2>Cómo funciona</h2>
+    <ol class="pasos">
+      <li><span>1</span>Reservas tu cita en el calendario</li>
+      <li><span>2</span>Hacemos tu valoración inicial</li>
+      <li><span>3</span>Recibes tu plan personalizado + seguimiento mensual</li>
+    </ol>
+  </div>
+</section>
+
+<section class="precios">
+  <div class="container narrow">
+    <h2>Precios</h2>
+    <table>
+      <tr><td>Valoración inicial + plan</td><td>40€</td></tr>
+      <tr><td>Seguimiento mensual</td><td>30€/mes</td></tr>
+      <tr><td>Seguimiento bisemanal</td><td>50€/mes</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="reserva" class="reserva">
+  <div class="container narrow">
+    <h2>¿Empezamos?</h2>
+    <p>Reserva tu valoración inicial ahora mismo.</p>
+    <div id="cal-booking" class="cal-embed"></div>
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", {origin: "https://cal.com"});
+      Cal("inline", {
+        elementOrSelector: "#cal-booking",
+        calLink: "nutreteconlu",
+        layout: "month_view"
+      });
+    </script>
+  </div>
+</section>
+
+<footer>
+  <div class="container narrow">
+    <p>Lucía · Nutricionista colegiada CV02333 · Valencia</p>
+    <p><a href="https://instagram.com/nutreteconlu" target="_blank" rel="noopener">@nutreteconlu en Instagram</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
