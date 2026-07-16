@@ -43,17 +43,17 @@ body {
   letter-spacing: -0.01em;
 }
 
-.btn-small {
+.btn.btn-small {
   margin-top: 0;
   padding: 8px 18px;
   font-size: 14px;
 }
 
-.btn-wa {
+.btn.btn-wa {
   background: #25d366;
 }
 
-.btn-wa:hover {
+.btn.btn-wa:hover {
   background: #1da851;
 }
 
