@@ -38,9 +38,10 @@ body {
 }
 
 .brand {
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 22px;
   color: var(--green-dark);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .btn.btn-small {
@@ -84,6 +85,25 @@ body {
 }
 
 h1, h2, h3 { line-height: 1.2; margin-top: 0; }
+
+section h2 {
+  font-size: clamp(24px, 4vw, 32px);
+  position: relative;
+  display: inline-block;
+  padding-bottom: 14px;
+}
+
+section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--green);
+}
 
 .btn {
   display: inline-block;
@@ -194,9 +214,15 @@ section {
 }
 
 .incluye .grid .icon {
-  font-size: 28px;
-  display: block;
-  margin-bottom: 12px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #eef4ee;
+  margin-bottom: 14px;
 }
 
 .incluye .grid h3 {
@@ -257,6 +283,11 @@ section {
   text-align: left;
 }
 
+.precios tr:first-child td {
+  background: #eef4ee;
+  font-weight: 600;
+}
+
 .precios tr:last-child td { border-bottom: none; }
 
 .precios td:last-child {
@@ -275,12 +306,38 @@ section {
   border-radius: 12px;
   padding: 16px 20px;
   margin-top: 16px;
+  transition: box-shadow 0.2s ease;
+}
+
+.faq details[open] {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
 
 .faq summary {
   cursor: pointer;
   font-weight: 600;
   color: var(--green-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--green);
+  margin-left: 12px;
+  transition: transform 0.2s ease;
+}
+
+.faq details[open] summary::after {
+  transform: rotate(45deg);
 }
 
 .faq details p {
