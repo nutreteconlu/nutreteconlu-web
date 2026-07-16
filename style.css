@@ -63,6 +63,12 @@ body {
   margin-top: 20px;
 }
 
+.tz-note {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
 #reserva {
   scroll-margin-top: 72px;
 }
