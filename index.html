@@ -111,6 +111,16 @@
   <div class="container narrow">
     <h2>¿Empezamos?</h2>
     <p>Reserva tu valoración inicial ahora mismo.</p>
+
+    <!-- === BOTÓN WHATSAPP (pendiente de activar) ===
+         Cuando tengas el número de empresa, sustituye 34XXXXXXXXX por el número
+         (con prefijo país, sin +, sin espacios) y descomenta este bloque:
+    <a class="btn btn-wa" href="https://wa.me/34XXXXXXXXX?text=Hola%20Lucía,%20quiero%20información%20sobre%20una%20dieta%20personalizada" target="_blank" rel="noopener">
+      Escríbeme por WhatsApp
+    </a>
+    <p class="wa-alt">o reserva directamente aquí abajo:</p>
+    === FIN BOTÓN WHATSAPP === -->
+
     <div id="cal-booking" class="cal-embed"></div>
     <script type="text/javascript">
       (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
