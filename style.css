@@ -282,14 +282,61 @@ section {
   font-weight: 700;
 }
 
-.precios table {
-  width: 100%;
-  border-collapse: collapse;
+.planes {
   margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.plan {
+  text-align: left;
   background: #fff;
   border-radius: 12px;
-  overflow: hidden;
+  padding: 20px 24px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.plan summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.plan summary::-webkit-details-marker {
+  display: none;
+}
+
+.plan-nombre {
+  font-weight: 600;
+}
+
+.plan-precio {
+  font-weight: 700;
+  color: var(--green-dark);
+  flex-shrink: 0;
+}
+
+.plan summary::after {
+  content: "+";
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--green);
+  margin-left: 12px;
+  transition: transform 0.2s ease;
+}
+
+.plan[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.plan p {
+  color: var(--muted);
+  margin: 16px 0 0;
+  line-height: 1.6;
 }
 
 .testimonios {
@@ -367,24 +414,6 @@ section {
   color: var(--muted);
 }
 
-.precios td {
-  padding: 16px 24px;
-  border-bottom: 1px solid #eee;
-  text-align: left;
-}
-
-.precios tr:first-child td {
-  background: #eef4ee;
-  font-weight: 600;
-}
-
-.precios tr:last-child td { border-bottom: none; }
-
-.precios td:last-child {
-  text-align: right;
-  font-weight: 700;
-  color: var(--green-dark);
-}
 
 .faq {
   background: #fff;
