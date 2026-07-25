@@ -484,6 +484,16 @@ section {
   min-height: 600px;
 }
 
+/* En el layout ancho (2 columnas), el widget muestra abajo un pequeño
+   logo "Cal.com". Recortamos esa franja inferior del iframe para un
+   aspecto más limpio y propio. En pantallas estrechas el widget apila
+   los horarios y no muestra el logo, así que ahí no recortamos nada. */
+@media (min-width: 850px) {
+  .cal-card { overflow: hidden; }
+  #cal-booking { overflow: hidden; }
+  #cal-booking iframe { display: block; margin-bottom: -60px; }
+}
+
 footer {
   padding: 40px 0;
   text-align: center;
